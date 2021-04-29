@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+body {
+  padding: 2rem;
+} */
+
+button {
+  /* margin: 2rem 0; */
+  padding: 1rem 2rem;
+  width: 120px;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+
+/* .App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  margin: 5em;
+}
+
+.editor {
+  margin-right: 10em;
+} */
+
+.ck-editor__editable_inline {
+  min-height: 300px;
+}
+
+.my-modal {
+  width: 90vw ;
+  max-width : 90vw;
+} 
