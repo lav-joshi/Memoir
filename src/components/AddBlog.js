@@ -108,19 +108,19 @@ const AddBlog = () => {
           <form onSubmit={handleSubmit}>
               <div className="mb-3">
                   <label for="exampleFormControlInput1" className="form-label"><b>TITLE</b></label>
-                  <input type="text" onChange = {handleTitleInput} value ={title} className="form-control" id="exampleFormControlInput1" placeholder="Title of your blog" requires />
+                  <input type="text" onChange = {handleTitleInput} value ={title} className="form-control" id="exampleFormControlInput1" placeholder="Title of your blog" required />
               </div>
               <div className="mb-3">
                   <label for="exampleFormControlInput1" className="form-label"><b>Choose DP of your post 😉 </b> </label>
-                  <input type="file" onChange = {handleFileInput}  className="form-control" id="exampleFormControlInput1" placeholder="Attach File" />
+                  <input type="file" onChange = {handleFileInput}  className="form-control" id="exampleFormControlInput1" placeholder="Attach File" required/>
               </div>
               <div className="mb-3">
                   <label for="exampleFormControlTextarea1" className="form-label"> <b>Describe your blog 📚</b> </label>
-                  <RichText  onDescriptionChange={(desc)=>handleDescriptionInput(desc)} />
+                  <RichText  onDescriptionChange={(desc)=>handleDescriptionInput(desc)} required/>
               </div>
               <button type="submit" class="btn btn-primary" style={{"margin-bottom":10}}> Submit</button>
           </form>
-          :<Loader/>  
+          :<Loader type="addingblog"/>  
         }
         
         <ToastContainer/>
